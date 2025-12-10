@@ -1,16 +1,41 @@
-# React + Vite
+# 🚀 My Context App: Демонстрація React Context API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Цей проєкт є навчальною демонстрацією використання **React Context API** для керування глобальним станом (темою та даними користувачів) без необхідності прокидання пропсів через численні рівні вкладеності компонентів (Prop Drilling).
 
-Currently, two official plugins are available:
+## 💡 Короткий опис проекту
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Проєкт складається з трирівневої ієрархії компонентів:
 
-## React Compiler
+1.  **Рівень 1 (`App.jsx`):** Головний компонент, який використовує контекст для зміни **теми** (Light/Dark).
+2.  **Рівень 2 (`UserList.jsx`):** Відображає список користувачів, отриманих із контексту, і використовує функцію `selectUser` із контексту для вибору активного профілю.
+3.  **Рівень 3 (`UserProfile.jsx`):** Відображає деталі **активного користувача** та отримує поточну **тему** безпосередньо з контексту, демонструючи доступ до даних на найглибшому рівні.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Основні технології
+* React 18+
+* Vite (як інструмент збірки)
+* React Context API (для управління станом)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Інструкції зі встановлення та запуску
+
+Щоб встановити та запустити цей проєкт локально, виконайте наступні кроки.
+
+### 1. Клонування репозиторію
+
+Якщо ви використовуєте Git, клонуйте репозиторій:
+```bash
+git clone [ВАША_АДРЕСА_РЕПОЗИТОРІЮ]
+cd my-context-app
+2. Встановлення залежностей
+
+npm install
+# або
+yarn install
+
+3. Запуск проекту
+npm run dev
+# або
+yarn dev
+
+Посилання на демо-версію
