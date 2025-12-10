@@ -30,12 +30,12 @@ cd my-context-app
 2. Встановлення залежностей
 
 npm install
-# або
+ або
 yarn install
 
 3. Запуск проекту
 npm run dev
-# або
+ або
 yarn dev
 
 Посилання на демо-версію
